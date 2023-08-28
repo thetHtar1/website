@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+  @import url('https://fonts.cdnfonts.com/css/rany');
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    font-family: 'inter',sans-serif;
+}
+
+.rany{
+  font-family: 'Rany', sans-serif;
+}
+.inter{
+  font-family: 'inter',sans-serif;
+}
+
+.hover-leftline-animation {
+  display: inline-block;
+  position: relative;
+  color: #FF0000;
+}
+
+.hover-leftline-animation::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  transform: scaleY(0);
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #FF0000;
+  transform-origin: left bottom;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-leftline-animation:hover::after {
+  transform: scaleY(1);
+  transform-origin: left top;
+}
+.nav-underline{
+  border-bottom:2px solid rgba(	150, 149, 149, 0);
+  
+}
+.nav-underline::after{
+  content: "";
+  position: absolute;
+  top: calc(100% - 1px);
+  border-bottom: 2px solid #969595;
+  animation: 1s forwards Linein;
+  
+}
+
+@keyframes Linein {
+  from{
+    left: 50%;
+    right: 50%;
+  }
+  to{
+    left: 3%;
+    right: 3%;
+    border-bottom:2px solid rgba(		150, 149, 149 1);
+
+  }
+}
+.div-container {
+  display: flex;
+  flex-direction: row ;
+gap: 18px;
+}
+.div-container > div {
+  flex: 1;
+}
+
+.div-items {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.div-fade-left {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in .div-fade-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 870px) {
+  .div-container {
+    display: flex;
+    flex-direction: column;
+  gap: 8px;
+  }
+
+}
+.shape{
+  width: 780px;
+  box-shadow: -300px -20px 0px 10px red  ;
+  border-radius: 50%;
+      float: right;
+     position: relative; 
+     -webkit-animation: slide 1.5s forwards;
+     animation: slide 1.5s forwards;
+     z-index: 1;
+
+  }
+  
+  
+  @keyframes slide {
+     0% { right: 0%; 
+  transform: scale(1);
+  opacity: 1;
+  }
+     100%{right:100%;
+  transform: scale(1.5);
+  opacity: 0; }
+  }
+  
+  
+.line{
+  width: 2px;
+}
+
+.job-banner {
+  transform: translateX(-100%);
+  animation: jobtextAni 0.8s ease forwards;
+ }
+ @keyframes jobtextAni {
+   0% {
+     
+     transform: translateX(100px);
+   }
+   100% {
+    transform: translateX(0);
+   }
+ }
+ .cookie-p {
+  opacity: 0;
+   transform: translateX(100%);
+   animation: cookieP 0.8s ease forwards ;
+   animation-delay: 0.8s; /* Add a 1-second delay */
+ }
+ 
+ @keyframes cookieP {
+   0% {
+       opacity: 0;
+     transform: translateX(100px);
+   }
+   100% {
+       opacity: 1;
+     transform: translateX(0);
+   }
+ }

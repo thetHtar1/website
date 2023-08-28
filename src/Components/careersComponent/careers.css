@@ -1,0 +1,35 @@
+.details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-in;
+  }
+  
+  .details.open {
+    max-height:100%; /* Adjust the height as needed */
+  }
+
+ 
+  
+
+ 
+  
+  .job-banner {
+   transform: translateX(-100%);
+   animation: jobtextAni 0.8s ease forwards;
+  }
+  @keyframes jobtextAni {
+    0% {
+      
+      transform: translateX(100px);
+    }
+    100% {
+     transform: translateX(0);
+    }
+  }
+  
+  
+
+  
+  
+  
+  

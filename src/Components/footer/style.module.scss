@@ -1,0 +1,21 @@
+
+.Subscribe{
+    background: transparent;
+    border-bottom: 1px solid #fff;
+
+}
+.Subscribe:focus{
+   outline :none;
+}
+.Subscribe::placeholder{
+    color: #FFF;
+    font-family: 'inter',sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+@media (min-width: 768px) { 
+    .Subscribe{width: 80%;}
+ }
+

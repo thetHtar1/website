@@ -1,0 +1,73 @@
+[
+    {
+      "img": "./team/john.jpg",
+      "name": "Kyaw Linn Maung",
+      "position": "Scrum Master"
+    },
+    {
+      "img": "./team/ally.jpg",
+      "name": "Htoo Htoo Maw",
+      "position": "Junior Product Owner"
+    },
+    {
+      "img": "./team/matt.jpg",
+      "name": "Min Khant",
+      "position": "Senior Frontend Developer"
+    },
+    {
+      "img": "./team/dany.jpg",
+      "name": "Htet Su Aung",
+      "position": "Senior Full Stack Developer"
+    },
+    {
+      "img": "./team/louis.jpg",
+      "name": "Si Thu Moe Myint",
+      "position": "Frontend Developer"
+    },
+    {
+      "img": "./team/river.jpg",
+      "name": "Khant Wai Thant",
+      "position": "Full Stack Developer"
+    },
+    {
+      "img": "./team/iris.jpg",
+      "name": "Chue Wathan Kyaw",
+      "position": "Mid-Frontend Developer"
+    },
+    {
+      "img": "./team/liam.jpg",
+      "name": "Kyaw Naing Oo",
+      "position": "Junior Graphic Designer"
+    },
+    {
+      "img": "./team/anna.jpg",
+      "name": "Aye Chan Myint",
+      "position": "Business Analyst & QA"
+    },
+    {
+      "img": "./team/wuki.jpg",
+      "name": "Kyaw Phyo Linn",
+      "position": "Software Support & Tester"
+    },
+    {
+      "img": "./team/lily.png",
+      "name": "Htar Inzali",
+      "position": "Junior Software Support & Tester"
+    },
+    {
+      "img": "./team/sonia.jpg",
+      "name": "Su Hnin Aye",
+      "position": "Senior Sales & Marketing Executive"
+    },
+    {
+      "img": "./team/honey.jpg",
+      "name": "Hanni Thein",
+      "position": "HR & Admin Executive"
+    },
+    {
+      "img": "./team/chris.jpg",
+      "name": "Kyaw Naing Soe",
+      "position": "Admin Assistant"
+    }
+  ]
+  

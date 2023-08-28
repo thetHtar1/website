@@ -1,0 +1,129 @@
+.timeline{
+    position: relative;
+    opacity: 0;
+         transform: translateX(100%);
+         animation: timelineani 0.8s ease forwards ;
+         animation-delay: 1.6s;  
+       }
+       
+       @keyframes timelineani {
+         0% {
+             opacity: 0;
+           transform: translateX(100px);
+         }
+         100% {
+             opacity: 1;
+           transform: translateX(0);
+         }
+       
+}
+
+.line{
+  margin-left: 5px;
+    border: 2px solid #000;
+    top: 50px;
+    bottom: -50px;
+    
+    /* display: none; */
+}
+
+/* .line:before
+{
+ 
+    display: block;
+    content: '';
+    height: 1rem;
+    width:   1rem;
+    border-radius: 50%;
+    background-color: #000;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+.sectionmilestones:before{
+  display: block;
+  content: '';
+  height: 1rem;
+  width:   1rem;
+  border-radius: 50%;
+  border: 2px solid #000;
+  background-color: #fff;
+  left: 10.6%;
+  transform: translateX(-50%);
+  position: absolute;
+ margin-top: 10px;
+ z-index: 2;
+}
+.equal{
+  height: 8px;
+  width:   1rem;
+  border-width: 2px 0px ;
+  border-color: #000;
+  background-color: #fff;
+  margin-left: 9.85%;
+top: 20px;
+ z-index: 4;
+ position: relative;
+
+}
+.line:after{
+    bottom: 0;
+}
+
+/* .sectionmilestones{
+    display: flex;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 600ms ease;
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    min-height: 300px;
+} */
+
+.sectionmilestones{
+    display: flex;
+    gap: 20px;
+}
+
+.contact-us-para{
+  
+        opacity: 0;
+         transform: translateX(100%);
+         animation: contactusPara 0.8s ease forwards ;
+         animation-delay: 0.8s;  
+       }
+       
+       @keyframes contactusPara {
+         0% {
+             opacity: 0;
+           transform: translateX(100px);
+         }
+         100% {
+             opacity: 1;
+           transform: translateX(0);
+         }
+       
+}
+
+
+ 
+ @keyframes contentOPO {
+   0% {
+       opacity: 0;
+   }
+   100% {
+       opacity: 1;
+   }
+ 
+}
+
+.content1{
+  margin-left: 1rem;
+}
+
+
+
